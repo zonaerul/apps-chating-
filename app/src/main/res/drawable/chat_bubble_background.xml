@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Warna background bubble -->
+    <corners android:bottomRightRadius="20dp" android:bottomLeftRadius="20dp" android:topRightRadius="20dp"/> <!-- Sudut melengkung -->
+    <padding android:left="20dp" android:right="20dp" android:top="10dp" android:bottom="10dp"/>
+</shape>

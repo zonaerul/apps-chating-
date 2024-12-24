@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_rounded"
+    android:padding="20dp">
+
+    <!-- GIF Loading -->
+    <ImageView
+        android:id="@+id/loading_gif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loading_gif"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Memuat..."
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

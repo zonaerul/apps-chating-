@@ -1,0 +1,51 @@
+import com.android.ddmlib.DdmPreferences
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.github.bassaer.example"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        DdmPreferences.setTimeOut(60000)
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        disable 'GoogleAppIndexingWarning'
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':chatmessageview')
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "androidx.appcompat:appcompat:$androidXAppcompatVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    androidTestImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidXEspressoCoreVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:$androidXEspressoIdlingResourceVersion"
+    androidTestImplementation "androidx.test:rules:$androidXTestRulesVersion"
+    androidTestImplementation "androidx.test:runner:$androidXTestRunnerVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidXTestExtJunitVersion"
+}
+
+repositories {
+    mavenCentral()
+}

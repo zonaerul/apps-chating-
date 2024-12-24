@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/baseline_arrow_back_black"
+                android:id="@+id/back_page"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="10dp"
+                android:layout_weight="1"
+                android:id="@+id/search_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search username"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edit_text_background"/>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/qr_code"
+                android:id="@+id/scan_qr_code"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+
+</RelativeLayout>

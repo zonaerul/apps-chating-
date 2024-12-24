@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/profile_users"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama pengguna"
+                android:id="@+id/name_users"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:id="@+id/status_user"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/date_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00 PM/AM"
+                android:textSize="13dp"/>
+            <ImageView
+                android:id="@+id/add_user"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/baseline_add_comment_24"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

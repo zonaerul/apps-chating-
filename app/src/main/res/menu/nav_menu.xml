@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_nav"
+        android:title="Chat"
+        android:icon="@drawable/chat"/>
+
+    <item
+        android:id="@+id/status_nav"
+        android:title="Status"
+        android:icon="@drawable/application"/>
+
+    <item
+        android:id="@+id/explorer_nav"
+        android:title="Explorer"
+        android:icon="@drawable/compass"/>
+
+</menu>

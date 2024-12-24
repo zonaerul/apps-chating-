@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "38788166966",
+    "firebase_url": "https://chating-tongkrongan-default-rtdb.firebaseio.com",
+    "project_id": "chating-tongkrongan",
+    "storage_bucket": "chating-tongkrongan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38788166966:android:1462c71f29c61544c9ef97",
+        "android_client_info": {
+          "package_name": "com.chaerul.chating"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQvfRmZmZEBOpfnCLwM9Dd5-5dJfVDc5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
